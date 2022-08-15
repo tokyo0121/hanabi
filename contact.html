@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>全国花火大会</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="全国の花火大会案内サイト">
+	<meta name="keywords" content="花火,花火大会">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/openclose.js"></script>
+</head>
+
+
+<body class="contact">
+
+<div id="container">
+
+	<!--PC用（801px以上端末）で表示させるブロック-->
+	<header class="pc">
+
+		 <h1 class="logo"><a href="index.html"><img src="images/logo.png" alt="花火大会へ行こう"></a></h1>
+
+			<!--PC用（801px以上端末）メニュー-->
+			 <nav id="menubar">
+					<ul>
+						 <li class="menuimg menu1"><a href="index.html"><span>Home</span></a></li>
+						 <li class="menuimg menu2"><a href="fireworks.html"><span>Fireworks</span></a></li>
+						 <li class="menuimg menu3"><a href="event1.html"><span>Reccomend</span></a></li>
+						 <li class="menuimg menu4 current"><a href="contact.html"><span>Contact</span></a></li>
+					</ul>
+				</nav>
+				 <ul class="icon">
+						 <li><a href="#"><img src="images/icon_facebook.png" alt="Facebook"></a></li>
+						 <li><a href="#"><img src="images/icon_twitter.png" alt="Twitter"></a></li>
+						 <li><a href="#"><img src="images/icon_instagram.png" alt="Instagram"></a></li>
+						 <li><a href="#"><img src="images/icon_youtube.png" alt="YouTube"></a></li>
+				 </ul>
+
+	</header>
+	<!--/.pc-->
+
+	<!--小さな端末用（800px以下端末）で表示させるブロック-->
+	<header class="sh">
+
+		 <h1 class="logo"><a href="index.html"><img src="images/logo.png" alt="花火大会へ行こう"></a></h1>
+
+			<!--小さな端末用（800px以下端末）メニュー-->
+			 <div id="menubar-s">
+					<nav>
+						 <ul>
+								<li class="menuimg menu1 current"><a href="index.html"><span>Home</span></a></li>
+								<li class="menuimg menu2"><a href="fireworks.html"><span>Fireworks</span></a></li>
+								<li class="menuimg menu3"><a href="event1.html"><span>Reccomend</span></a></li>
+								<li class="menuimg menu4 current"><a href="contact.html"><span>Contact</span></a></li>
+							</ul>
+						</nav>
+						<ul class="icon">
+							<li><a href="#"><img src="images/icon_facebook.png" alt="Facebook"></a></li>
+							<li><a href="#"><img src="images/icon_twitter.png" alt="Twitter"></a></li>
+							<li><a href="#"><img src="images/icon_instagram.png" alt="Instagram"></a></li>
+							<li><a href="#"><img src="images/icon_youtube.png" alt="YouTube"></a></li>
+						</ul>
+
+			 </div>
+				<!--/#menubar-s-->
+
+			</header>
+			<!--/.sh-->
+
+<div id="contents">
+
+<div id="main">
+
+<section id="pagetop">
+<!--
+<p class="check"></p> -->
+
+<h2 class="title">CONTACT<span>お問い合わせ</span></h2>
+
+<p>当ページに関するお問い合せ、掲載依頼などは以下のフォームから送信してください。なお、※のついた項目は入力必須項目です。</p>
+
+
+<table class="ta1">
+<tr>
+<th>お名前※</th>
+<td><input type="text" name="お名前" size="30" class="ws"></td>
+</tr>
+<tr>
+<th>メールアドレス※</th>
+<td><input type="text" name="メールアドレス" size="30" class="ws"></td>
+</tr>
+<tr>
+<th>お問い合わせ詳細※</th>
+<td><textarea name="お問い合わせ詳細" cols="30" rows="10" class="wl"></textarea></td>
+</tr>
+</table>
+
+<p class="c">
+<input type="submit" value="内容を確認する" class="btn">
+</p>
+
+</section>
+
+<footer>
+	<small>Tsuda University <a href="index.html">Sonehara seminar</a> </small>
+	<span class="pr"><a href="https://template-party.com/" target="_blank">《Web Design:Template-Party》</a></span>
+</footer>
+
+</div>
+<!--/#main-->
+
+</div>
+<!--/#contents-->
+
+</div>
+<!--/#container-->
+
+<!--ページの上部に戻る「↑」ボタン-->
+<p class="nav-fix-pos-pagetop"><a href="#pagetop">↑</a></p>
+
+<!--メニュー開閉ボタン-->
+<div id="menubar_hdr" class="close"></div>
+
+<!--メニューの開閉処理条件設定　800px以下-->
+<script>
+if (OCwindowWidth() <= 800) {
+	open_close("menubar_hdr", "menubar-s");
+}
+</script>
+
+</body>
+</html>
